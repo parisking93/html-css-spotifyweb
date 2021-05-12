@@ -5,20 +5,31 @@
 .margin-bot-5{
     margin-bottom: 5px;
 }
+.margin-right5{
+    margin-right: 5px;
+}
 .row.important{
     height: calc(100vh - 120px);
 }
 .end-col{
-    background-color: red;
+    border-bottom: 1px solid white ;
+    padding-bottom: 5px;
 
+}
+.width16{
+    width: 16px;
+}
+.width24{
+    width: 24px;
+}
+div.max-width100{
+    max-width: 100%;
 }
 /* header  */
 header{
     background-color: yellow;
     padding:0 15px 15px 15px;
     width: 200px;
-    display: flex;
-    flex-direction: column;
 }
 .box-logo.row{
     align-items: center;
@@ -49,6 +60,12 @@ header .box-list.playlist{
     font-size: 32px;
     line-height: 32px;
     vertical-align: middle;
+}
+header .box-image{
+    background-color: grey;
+    border-radius: 50%;
+    padding: 0 5px;
+    ;
 }
 /* fine header  */
 main .row{
