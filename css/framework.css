@@ -16,7 +16,10 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+.row-down{
+    display:flex;
+    flex-direction: column;
+}
 [class*="col-"] {flex: 0 0 auto;} 
   /* 12 System */
 .col-xs {
