@@ -87,18 +87,24 @@ header .box-image{
 nav.header-main{
     background-color: orange;
     height: 100px;
-    width: 100%;
+    width: calc(100% - 200px);
     max-width: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
 }
+.header-main .box-button button{
+    
+}
 .box{
     background-color: orangered;
     overflow-y: auto;
 }
-.box div{
+.box .nav-main{
     margin-top: 100px;
+}
+.nav-main .box-list li{
+    margin: 0 10px;
 }
 footer{
     width: 100%;
