@@ -8,11 +8,17 @@
 .row.important{
     height: calc(100vh - 120px);
 }
+.end-col{
+    background-color: red;
+
+}
 /* header  */
 header{
     background-color: yellow;
-    padding-left: 15px;
+    padding:0 15px 15px 15px;
     width: 200px;
+    display: flex;
+    flex-direction: column;
 }
 .box-logo.row{
     align-items: center;
@@ -28,6 +34,7 @@ header .box-list.playlist{
     height: 180px;
     overflow-y: scroll;
     width: 80%;
+    margin-bottom: 15px;
 }
 .box-list li{
     margin: 5px 0;
