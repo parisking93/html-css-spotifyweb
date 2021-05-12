@@ -2,6 +2,9 @@
 .margin-bot{
     margin-bottom: 25px;
 }
+.margin-bot-5{
+    margin-bottom: 5px;
+}
 .row.important{
     height: calc(100vh - 120px);
 }
@@ -9,20 +12,35 @@
 header{
     background-color: yellow;
     padding-left: 15px;
+    width: 200px;
 }
-.box-image.row{
+.box-logo.row{
     align-items: center;
     height: 100px;
 }
-.box-image.row img{
-    height: 50%;
+.box-logo.row img{
+    width: 90%;
 }
 .box-list{
     list-style: none;
 }
+header .box-list.playlist{
+    height: 180px;
+    overflow-y: scroll;
+    width: 80%;
+}
+.box-list li{
+    margin: 5px 0;
+}
 .box-list li img{
     height: 26px;
     line-height: 26px;
+    vertical-align: middle;
+}
+.box-list li i{
+    color: white;
+    font-size: 32px;
+    line-height: 32px;
     vertical-align: middle;
 }
 /* fine header  */
