@@ -1,16 +1,33 @@
-
-header{
-    width: 100px;
-    height: calc(100vh - 150px);
-    background-color: yellow;
+/* COMMONS */
+.margin-bot{
+    margin-bottom: 25px;
 }
-footer{
-    width: 100%;
-    height: 150px;
-    background-color: black;
-    position: fixed;
-    top:calc(100vh - 150px);
-    left: 0;
+.row.important{
+    height: calc(100vh - 120px);
+}
+/* header  */
+header{
+    background-color: yellow;
+    padding-left: 15px;
+}
+.box-image.row{
+    align-items: center;
+    height: 100px;
+}
+.box-image.row img{
+    height: 50%;
+}
+.box-list{
+    list-style: none;
+}
+.box-list li img{
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+}
+/* fine header  */
+main .row{
+    height: calc(100vh - 120px);
 }
 main.col-xs{
     background-color: blue;
@@ -18,9 +35,20 @@ main.col-xs{
 nav{
     background-color: orange;
     height: 100px;
-
 }
 .box{
     background-color: orangered;
-    height: calc(100% - 100px);
+    overflow-y: auto;
+}
+.box div{
+    height: calc(100vh - 120px - 100px);
+}
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    
 }
