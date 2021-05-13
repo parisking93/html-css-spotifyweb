@@ -7,6 +7,7 @@
 .margin-right5{
     margin-right: 5px;
 }
+
 .end-col{
     border-bottom: 1px solid white ;
     padding-bottom: 5px;
@@ -146,15 +147,16 @@ main section{
     flex-wrap: nowrap;
 } */
 main section .colonna{
-    width: calc(100% / 6 - 40px);
+    width: calc(100% / 6 - 30px);
     margin-right: 2vw;
-    min-width: 135px ;
+    min-width: 110px ;
+    text-align: center;
 }
 
 main .box-image{
     width: 100%;
     position: relative;
-    min-width: 140px;
+    min-width: 125px;
 }
 main .box-image img{
     width: 100%;
@@ -168,6 +170,18 @@ main .box-image img{
     position: absolute;
     top: 0;
     left: 0;
+}
+.overlay .play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay .play i{
+    font-size: 40px;
+}
+.title{
+    margin: 10px 0 5px 0;
 }
 footer{
     width: 100%;
