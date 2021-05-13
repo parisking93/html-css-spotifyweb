@@ -38,7 +38,7 @@ div.max-width100{
 .subtitle{
     color: #797b80;
     font-size: 14px;
-}
+}   
 body{
     color: white;
 }
@@ -71,6 +71,9 @@ header{
 .box-logo.row .logo{
     width: 90%;
 }
+.box-svg{
+    width: 100%;
+}
 img.unone{
     width: 100%;
     margin-top: 10px;
@@ -78,14 +81,14 @@ img.unone{
 }
 header .box-row{
     /* height: 30%; */
-    height: 140px;
+    height: 26vh;
+    overflow: hidden;
 }
 header .box-list.playlist{
     height: 120px;
-    overflow-y: auto;
     width: 80%;
     margin-bottom: 15px;
-    overflow: hidden;
+    overflow-y: auto;
 }
 header .small-list{
     font-size: 12px;
@@ -108,6 +111,9 @@ header .small-list{
     line-height: 32px;
     vertical-align: middle;
 }
+header .download{
+    vertical-align: middle;
+}
 header .profile{
     background-color: grey;
     border-radius: 50%;
@@ -115,7 +121,18 @@ header .profile{
 /* header .end-col{
     min-height: 20px;
 } */
-
+header .box-svg{
+    display: inline-block;
+    position: relative;
+}
+.overlay-nonone{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 header .box-image{
     background-color: grey;
     border-radius: 50%;
@@ -135,7 +152,7 @@ main{
 }
 nav.header-main{
     height: 100px;
-    width: calc(100% - 200px);
+    width: calc(100% - 50px);
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -161,7 +178,7 @@ nav.header-main{
     background-color: greenyellow;
     margin: auto;
 }
-.nav-main .box-list li a{
+.nav-main a{
     margin: 0 10px;
     text-transform: uppercase;
     line-height: 21px;
@@ -179,9 +196,9 @@ main section{
     flex-wrap: nowrap;
 } */
 main section .colonna{
-    width: calc(100% / 6 - 30px);
-    margin-right: 2vw;
-    min-width: 115px ;
+    width: calc(100% / 2 - 30px);
+    margin-right: 2vh;
+    min-width: 120px ;
     text-align: center;
 }
 
@@ -220,13 +237,19 @@ main .box-image img{
 footer{
     width: 100%;
     height: 120px;
-    background-color: black;
+    background-color: #282828;
     position:fixed;
     bottom: 0;
     left: 0;
 }
-/* FINE FOOTER INIZIO MEDIA QUERY  */
-
+/* FINE FOOTER INIZIO HOVER */
+    a:hover{
+        color: white;
+    }
+    a:hover .overlay-nonone{
+        display: none;
+    }
+/* FINE HOVER INIZIO MEDIA QUERY  */
 @media  screen and (min-width:540px) {
     /* colonna sinistra  */
     header{
@@ -234,6 +257,9 @@ footer{
     }
     .none{
         display: inline-block;
+    }
+    .box-svg{
+        width: auto;
     }
     .unone{
         display: none;
@@ -253,5 +279,13 @@ footer{
     .end-col{
         border-bottom: 1px solid white ;
     }
-}
     /* fine colonna sinistra  */
+    /* inizio colonna destra  */
+    nav.header-main{
+        width: calc(100% - 200px);
+    }
+    main section .colonna{
+    width: calc(100% / 6 - 30px);
+    }
+}
+    
