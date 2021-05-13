@@ -1,5 +1,5 @@
 .margin-bot{
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .margin-bot-5{
     margin-bottom: 5px;
@@ -7,7 +7,12 @@
 .margin-right5{
     margin-right: 5px;
 }
-
+a{
+    text-decoration: none;
+}
+.cap{
+    text-transform: capitalize;
+}
 .end-col{
     border-bottom: 1px solid white ;
     padding-bottom: 5px;
@@ -38,6 +43,11 @@ div.max-width100{
 body{
     color: white;
 }
+.none{
+    display: none;
+
+}
+
 /* .box-image img{
     width: 90%;
     min-width: 140px;
@@ -46,7 +56,7 @@ body{
 header{
     background-color: #000000;
     padding:0 15px 15px 15px;
-    width: 200px;
+    width: 50px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     height: 100%;
@@ -56,11 +66,16 @@ header{
 }
 .box-logo.row{
     align-items: center;
-    height: 100px;
     width: 100%;
+    height: auto;
 }
-.box-logo.row img{
+.box-logo.row .logo{
     width: 90%;
+}
+img.unone{
+    width: 100%;
+    margin-top: 10px;
+    line-height: 26px;
 }
 header .box-row{
     /* height: 30%; */
@@ -72,11 +87,19 @@ header .box-list.playlist{
     width: 80%;
     margin-bottom: 15px;
 }
+header .small-list{
+    font-size: 12px;
+    color: #797b80;
+    text-transform:capitalize;
+}
+.list-header1{
+    color: white;
+}
 .box-list li{
     margin: 5px 0;
 }
 .box-list li img{
-    height: 26px;
+    height: auto;
     line-height: 26px;
     vertical-align: middle;
 }
@@ -93,6 +116,9 @@ header .box-image{
     background-color: grey;
     border-radius: 50%;
     padding: 0 5px;
+}
+header .bot-side{
+    overflow: overlay;
 }
 /* fine header  */
 /* main .row{
@@ -140,7 +166,6 @@ nav.header-main{
     line-height: 21px;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
     color: #797b80;
 }
 main section{
@@ -190,11 +215,32 @@ main .box-image img{
 .title{
     margin: 10px 0 5px 0;
 }
-
+/* FINE MAIN INIZIO FOOTER  */
 footer{
     width: 100%;
     height: 120px;
     background-color: black;
-    position:absolute;
-    bottom: 0px;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+}
+/* FINE FOOTER INIZIO MEDIA QUERY  */
+
+@media  screen and (min-width:540px) {
+    
+    header{
+        width: 200px;
+    }
+    .none{
+        display: inline-block;
+    }
+    .unone{
+        display: none;
+    }
+    .box-logo.row{
+        height: 100px;
+    }
+    .top-side ul img{
+        height: 26px;
+    }
 }
