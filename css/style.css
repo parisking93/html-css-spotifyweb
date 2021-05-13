@@ -14,7 +14,6 @@ a{
     text-transform: capitalize;
 }
 .end-col{
-    border-bottom: 1px solid white ;
     padding-bottom: 5px;
 
 }
@@ -27,8 +26,8 @@ a{
 .width16{
     width: 16px;
 }
-.width21{
-    width: 21px;
+.width24{
+    width: 24px;
 }
 div.max-width100{
     max-width: 100%;
@@ -86,6 +85,7 @@ header .box-list.playlist{
     overflow-y: auto;
     width: 80%;
     margin-bottom: 15px;
+    overflow: hidden;
 }
 header .small-list{
     font-size: 12px;
@@ -108,6 +108,10 @@ header .small-list{
     line-height: 32px;
     vertical-align: middle;
 }
+header .profile{
+    background-color: grey;
+    border-radius: 50%;
+}
 /* header .end-col{
     min-height: 20px;
 } */
@@ -116,9 +120,6 @@ header .box-image{
     background-color: grey;
     border-radius: 50%;
     padding: 0 5px;
-}
-header .bot-side{
-    overflow: overlay;
 }
 /* fine header  */
 /* main .row{
@@ -227,7 +228,7 @@ footer{
 /* FINE FOOTER INIZIO MEDIA QUERY  */
 
 @media  screen and (min-width:540px) {
-    
+    /* colonna sinistra  */
     header{
         width: 200px;
     }
@@ -243,4 +244,14 @@ footer{
     .top-side ul img{
         height: 26px;
     }
+    header .profile{
+        margin-right: 5px;
+    }
+    header .download{
+        margin-right: 5px;
+    }
+    .end-col{
+        border-bottom: 1px solid white ;
+    }
 }
+    /* fine colonna sinistra  */
