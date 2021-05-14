@@ -213,7 +213,7 @@ main section{
 } */
 main section .colonna{
     width: calc(100% / 2 - 30px);
-    margin-right: 2vh;
+    margin-right: 15px;
     min-width: 120px ;
     text-align: center;
 }
@@ -283,7 +283,7 @@ footer .central .icon-bigger i{
     font-size: 28px;
 }
 footer .barra{
-    width: 50%;
+    width: 100%;
     height: 3px;
     background-color: rgba(255,255,255,0.5);
     border-radius: 3px;
@@ -291,9 +291,13 @@ footer .barra{
 }
 footer .barra-centrale{
     margin:10px;
+    width: 70%;
+}
+.aside .box-barra{
+    width: 30%;
 }
 .barra .barra-verde{
-    background-color: greenyellow;
+    background-color: rgba(255,255,255,0.7);
     height: 100%;
     border-radius: 3px;
     width: 20%;
@@ -307,6 +311,10 @@ footer .barra-centrale{
     top: 50%;
     left: 19%;
     transform: translateY(-50%);
+    display: none;
+}
+.row.width235px{
+    min-width: 235px;
 }
 /* FINE FOOTER INIZIO HOVER */
     a:hover{
@@ -321,6 +329,23 @@ footer .barra-centrale{
     }
     .overlay .play:hover i{
         font-size: 45px;
+    }
+    footer .box-barra:hover, footer i{
+        cursor: pointer;
+    }
+    footer .box-barra:hover .palla{
+        display: block;
+    }
+    footer .box-barra:hover .barra-verde{
+        display: block;
+        background-color: greenyellow; 
+    }
+    footer .under.row i:hover{
+        font-size: 200%;
+        margin-bottom: -5px;
+    }
+    footer .under.row i.special:hover{
+        margin-bottom: 6px;
     }
 /* FINE HOVER INIZIO MEDIA QUERY  */
 @media  screen and (min-width:540px) {
@@ -358,7 +383,9 @@ footer .barra-centrale{
         width: calc(100% - 200px);
     }
     main section .colonna{
-    width: calc(100% / 6 - 30px);
+        width: calc(100% / 6 - 30px);
+        margin-right: 10px;
     }
 }
+
     
