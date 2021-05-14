@@ -44,6 +44,9 @@ a{
 .width16{
     width: 16px;
 }
+.height{
+    height: 100%;
+}
 .width24{
     width: 24px;
 }
@@ -69,6 +72,17 @@ body{
     width: 90%;
     min-width: 140px;
 } */
+.row.important{
+    height: calc(100vh - 100px);
+}
+.colonna-header{
+    height: 100%;
+    overflow: hidden;
+}
+.destra{
+    height: 100%;
+    overflow: hidden;
+}
 /* header  */
 header{
     background-color: #000000;
@@ -78,9 +92,9 @@ header{
     font-size: 14px;
     height: 100%;
 }
-.row.important{
-    height: calc(100vh - 100px);
-}
+/* .colonna-header{
+    height: calc(100vh - 50px);
+} */
 .box-logo.row{
     align-items: center;
     width: 100%;
@@ -120,7 +134,7 @@ header .small-list{
     margin: 5px 0;
 }
 .box-list li img{
-    height: auto;
+    height: 21px;
     line-height: 26px;
     vertical-align: middle;
 }
@@ -176,7 +190,7 @@ nav.header-main{
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.3);
 }
-.header-main .box-button{
+.header-main .box-button a{
     padding: 10px 30px;
     border-radius: 20px;
     border: 1px solid white;
@@ -186,10 +200,11 @@ nav.header-main{
     margin-right: 15px;
 }
 .box{
-    overflow: auto;
-    height: 50%;
+    height: 100%;
+    overflow: auto; 
 }
-.box .nav-main{
+
+.nav-main{
     margin-top: 100px;
 }
 .nav-main .green{
@@ -210,7 +225,6 @@ main section{
     margin-top: 50px;
     margin-left: 10px;
     font-family: 'Roboto', sans-serif;
-
 }
 /* main section .row{
     flex-wrap: nowrap;
@@ -221,6 +235,7 @@ main section .colonna{
     min-width: 120px ;
     text-align: center;
     margin-bottom: 15px;
+    height: 100%;
 }
 
 main .box-image{
@@ -328,6 +343,9 @@ footer .barra-centrale{
     a:hover .overlay-nonone{
         display: none;
     }
+    .box-button:hover{
+        transform: scale(1.1);
+    }
     section .box-image:hover .overlay{
         display: block;
         cursor: pointer;
@@ -359,6 +377,12 @@ footer .barra-centrale{
     }
     .box-svg{
         width: auto;
+    }
+    .bord-left{
+        border-left: 2px solid greenyellow;
+        margin-left: -15px;
+        margin-right: 12px;
+        height: 100%;
     }
     .unone{
         display: none;

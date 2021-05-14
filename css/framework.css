@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-.container-fluid{width: 100%;}
+.container-fluid{
+    width: 100%;
+}
 
 .container {
     /* è la versione mobile e lasciamo il container al 100% */
