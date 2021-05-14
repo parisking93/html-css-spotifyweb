@@ -16,6 +16,9 @@
 .margin-left20{
     margin-left: 20px;
 }
+.margin-top10{
+    margin-top: 10px;
+}
 .marg5{
     margin: 5px;
 }
@@ -183,7 +186,8 @@ nav.header-main{
     margin-right: 15px;
 }
 .box{
-    overflow-y: auto;
+    overflow: auto;
+    height: 50%;
 }
 .box .nav-main{
     margin-top: 100px;
@@ -216,6 +220,7 @@ main section .colonna{
     margin-right: 15px;
     min-width: 120px ;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 main .box-image{
@@ -341,11 +346,7 @@ footer .barra-centrale{
         background-color: greenyellow; 
     }
     footer .under.row i:hover{
-        font-size: 200%;
-        margin-bottom: -5px;
-    }
-    footer .under.row i.special:hover{
-        margin-bottom: 6px;
+        transform: scale(1.2);
     }
 /* FINE HOVER INIZIO MEDIA QUERY  */
 @media  screen and (min-width:540px) {
