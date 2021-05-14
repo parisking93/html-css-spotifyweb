@@ -16,6 +16,9 @@
 .margin-left20{
     margin-left: 20px;
 }
+.marg5{
+    margin: 5px;
+}
 a{
     text-decoration: none;
 }
@@ -260,13 +263,11 @@ footer .aside .row {
     align-items: center;
 }
 footer .row .aside{
-    background-color:yellow ;
     height: 100%;
     padding: 15px;
     min-width: 195px;
 }
 footer .row .central{
-    background-color:black ;
     height: 100%;
     padding: 15px;
 }
@@ -286,8 +287,10 @@ footer .barra{
     height: 3px;
     background-color: rgba(255,255,255,0.5);
     border-radius: 3px;
-    margin:10px;
     position: relative;
+}
+footer .barra-centrale{
+    margin:10px;
 }
 .barra .barra-verde{
     background-color: greenyellow;
