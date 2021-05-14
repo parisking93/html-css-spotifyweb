@@ -19,7 +19,7 @@
 a{
     text-decoration: none;
 }
-.row{
+.sp{
     height: 100%;
 }
 .cap{
@@ -256,7 +256,7 @@ footer{
     bottom: 0;
     left: 0;
 }
-footer .row{
+footer .aside .row {
     align-items: center;
 }
 footer .row .aside{
@@ -272,6 +272,38 @@ footer .row .central{
 }
 footer .row img{
     height: 50px;
+}
+footer .central i{
+    color: white;
+    margin: 10px;
+    font-size: 21px;
+}
+footer .central .icon-bigger i{
+    font-size: 28px;
+}
+footer .barra{
+    width: 50%;
+    height: 3px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 3px;
+    margin:10px;
+    position: relative;
+}
+.barra .barra-verde{
+    background-color: greenyellow;
+    height: 100%;
+    border-radius: 3px;
+    width: 20%;
+}
+.barra .palla{
+    background-color: rgba(255,255,255,1);
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    transform: translateY(-50%);
 }
 /* FINE FOOTER INIZIO HOVER */
     a:hover{
