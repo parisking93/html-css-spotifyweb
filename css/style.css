@@ -7,8 +7,20 @@
 .margin-right5{
     margin-right: 5px;
 }
+.margin-left5{
+    margin-left: 5px;
+}
+.margin-left10{
+    margin-left:10px
+}
+.margin-left20{
+    margin-left: 20px;
+}
 a{
     text-decoration: none;
+}
+.row{
+    height: 100%;
 }
 .cap{
     text-transform: capitalize;
@@ -61,7 +73,7 @@ header{
     height: 100%;
 }
 .row.important{
-    height: calc(100vh - 120px);
+    height: calc(100vh - 100px);
 }
 .box-logo.row{
     align-items: center;
@@ -151,7 +163,7 @@ main{
     height: 100%;
 }
 nav.header-main{
-    height: 100px;
+    height: 90px;
     width: calc(100% - 50px);
     position: fixed;
     top: 0;
@@ -165,6 +177,7 @@ nav.header-main{
     color: white;
     text-transform: uppercase;
     font-size: 12px;
+    margin-right: 15px;
 }
 .box{
     overflow-y: auto;
@@ -237,11 +250,28 @@ main .box-image img{
 /* FINE MAIN INIZIO FOOTER  */
 footer{
     width: 100%;
-    height: 120px;
+    height: 100px;
     background-color: #282828;
     position:fixed;
     bottom: 0;
     left: 0;
+}
+footer .row{
+    align-items: center;
+}
+footer .row .aside{
+    background-color:yellow ;
+    height: 100%;
+    padding: 15px;
+    min-width: 195px;
+}
+footer .row .central{
+    background-color:black ;
+    height: 100%;
+    padding: 15px;
+}
+footer .row img{
+    height: 50px;
 }
 /* FINE FOOTER INIZIO HOVER */
     a:hover{
