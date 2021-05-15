@@ -18,6 +18,11 @@
     display: flex;
     flex-wrap: wrap;
 }
+.row-nw{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
 .row-down{
     display:flex;
     flex-direction: column;
@@ -61,6 +66,7 @@
 .around-xs {justify-content: space-around;}
 .between-xs {justify-content: space-between;}
 
+.base-xs{align-items: baseline;}
 .top-xs{align-items: flex-start;}
 .middle-xs{align-items: center;}
 .bottom-xs{align-items: flex-end;}
