@@ -10,12 +10,6 @@
 .margin-left5{
     margin-left: 5px;
 }
-.margin-left10{
-    margin-left:10px
-}
-.margin-left20{
-    margin-left: 20px;
-}
 .margin-top10{
     margin-top: 10px;
 }
@@ -284,23 +278,24 @@ footer .aside .row {
 }
 footer .row .aside{
     height: 100%;
-    padding: 15px;
-    min-width: 195px;
+    padding: 15px 1.3vw;
 }
 footer .row .central{
     height: 100%;
-    padding: 15px;
+    padding: 15px 1.3vw;
 }
 footer .row img{
     height: 50px;
 }
 footer .central i{
     color: white;
-    margin: 10px;
+    margin: 10px 1vw;
     font-size: 21px;
 }
 footer .central .icon-bigger i{
     font-size: 28px;
+    margin-top: 8px;
+
 }
 footer .barra{
     width: 100%;
@@ -310,7 +305,7 @@ footer .barra{
     position: relative;
 }
 footer .barra-centrale{
-    margin:10px;
+    margin:10px 1vw;
     width: 70%;
 }
 .aside .box-barra{
@@ -332,9 +327,6 @@ footer .barra-centrale{
     left: 19%;
     transform: translateY(-50%);
     display: none;
-}
-.row.width235px{
-    min-width: 235px;
 }
 /* FINE FOOTER INIZIO HOVER */
     a:hover{
@@ -411,6 +403,7 @@ footer .barra-centrale{
         width: calc(100% / 6 - 30px);
         margin-right: 10px;
     }
+    /* fine colonna destra  */
+    /* footer  */
 }
 
-    
