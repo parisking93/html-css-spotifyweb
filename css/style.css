@@ -97,6 +97,10 @@ header{
 .box-logo.row .logo{
     width: 90%;
 }
+header .ani-logo{
+    display: inline-block;
+    width: 100%;
+}
 .box-svg{
     width: 100%;
 }
@@ -180,6 +184,9 @@ nav.header-main{
     top: 0;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.3);
+}
+.header-main .box-button{
+    transition: all 0.4s ease-in-out;
 }
 .header-main .box-button a{
     padding: 10px 30px;
@@ -266,16 +273,13 @@ footer{
     width: 100%;
     height: 100px;
     background-color: #282828;
-    position:fixed;
-    bottom: 0;
-    left: 0;
 }
 footer .aside .row-nw {
     align-items: center;
 }
 footer .row .aside{
     height: 100%;
-    padding: 15px 1.3vw;
+    padding: 10px 1.3vw;
 }
 footer .row .central{
     height: 100%;
@@ -283,7 +287,7 @@ footer .row .central{
 }
 footer .row img{
     height: 10vw;
-    min-height: 35px;
+    min-height: 40px;
 }
 footer .row-nw .n-brano{
     font-size: 12px;
@@ -296,6 +300,7 @@ footer .central i{
     color: white;
     margin: 10px 1vw;
     font-size: 4vw;
+    transition: all 0.2s ease-in-out;
 }
 footer .central .icon-bigger i{
     font-size: 4.4vw;
@@ -337,6 +342,12 @@ footer .barra-centrale{
 }
 footer .aside .size{
     font-size: 12px;
+}
+footer .aside .box-n-brano{
+    line-height: 10px;
+}
+footer .aside h5{
+    margin-bottom: 5px;
 }
 /* FINE FOOTER INIZIO HOVER */
     a:hover{
@@ -418,6 +429,9 @@ footer .aside .size{
     footer .row img{
         height: 50px;
     }
+    footer .central{
+        padding: 10px 1.3vw;
+    }
     footer .central i{
         font-size: 21px;
     }
@@ -427,13 +441,15 @@ footer .aside .size{
     }
     footer .row-nw .n-brano{
         font-size: 14px;
-        line-height: 18px;
     } 
     footer .box-barra .time{
         font-size: 16px;
     }
     footer .aside .size{
         font-size: 16px;
+    }
+    footer .aside h5{
+        margin-bottom: 10px;
     }
 }
 
