@@ -198,7 +198,7 @@ nav.header-main{
 }
 
 .nav-main{
-    margin-top: 100px;
+    margin-top: 90px;
 }
 .nav-main .green{
     height: 1px;
@@ -447,35 +447,53 @@ footer .aside h5{
 /* MEDIA QUERY MAX 350PX */
 @media screen and (max-height:350px) {
     .colonna .header-main{
-       display: none;
-   }
+        display: none;
+    }
 }
 /* MEDIA QUERY MAX 55PX  */
-@media  screen and (max-height:55px) {
+@media screen and (max-height:55px) {
 
-    .colonna .header-main{
-        height: 100vh;
-        display:flex;
-    }
+    body{
+        overflow: hidden;
+    }   
     footer .row .central{
-       padding: 0 1.3vw;
-    }
-    footer .central .under.row{
+        padding: 0 1.3vw;
+     }
+    footer .central .under.row-nw{
         height: 100vh;
+    }
+    footer .aside .row-nw.footer-right{
+        align-items: flex-end;
     }
     footer .aside .row-nw.footer-left{
         align-items: flex-start;
         margin-left: -10px;
     }
-    footer .aside .row-nw.footer-right{
-        align-items: flex-end;
-    }
     footer .aside .row-nw img{
         height: 100vh;
         margin-top: -10px;
     }
+    .colonna .header-main{
+        height: 100vh;
+        display:flex;
+    }
+    .header-main .box-button a {
+        padding: 10px 2vw;
+        letter-spacing: -0.5px;
+    }
+}
+
+@media  screen and (max-height:55px) and (min-width:756px){
+
     footer .aside .icon{
-        margin-left: -25px;
+        margin-left: -1vw;
+    }
+    footer .central .under.row-nw{
+        height: 100vh;
+    }
+   
+    footer .aside .icon{
+        margin-left: -1vw;
     }
     footer .box-barra{
         margin-top: 10px;
@@ -487,6 +505,11 @@ footer .aside h5{
     footer .central .icon-bigger i{
         font-size: 60vh;
         margin-top: 0;
+    }
+    .header-main .box-button a {
+        padding: 10px 30px;
+        margin-right: 15px;
+        letter-spacing: 0;
     }
     
 }
