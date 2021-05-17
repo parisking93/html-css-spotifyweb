@@ -1,4 +1,8 @@
-
+@media screen and (max-height:350px) {
+     .colonna .header-main{
+        display: none;
+    }
+}
 .margin-bot{
     margin-bottom: 20px;
 }
@@ -440,11 +444,18 @@ footer .aside h5{
         font-size: 16px;
     }
 }
-
+/* MEDIA QUERY MAX 350PX */
+@media screen and (max-height:350px) {
+    .colonna .header-main{
+       display: none;
+   }
+}
+/* MEDIA QUERY MAX 55PX  */
 @media  screen and (max-height:55px) {
 
     .colonna .header-main{
         height: 100vh;
+        display:flex;
     }
     footer .row .central{
        padding: 0 1.3vw;
@@ -479,4 +490,6 @@ footer .aside h5{
     }
     
 }
+
+
 
