@@ -1,3 +1,4 @@
+
 .margin-bot{
     margin-bottom: 20px;
 }
@@ -132,12 +133,10 @@ header .small-list{
 }
 .box-list li img{
     height: 21px;
-    line-height: 26px;
     vertical-align: middle;
 }
 .box-list li i{
     font-size: 32px;
-    line-height: 32px;
     vertical-align: middle;
 }
 header .download{
@@ -147,9 +146,6 @@ header .profile{
     background-color: grey;
     border-radius: 50%;
 }
-/* header .end-col{
-    min-height: 20px;
-} */
 header .box-svg{
     display: inline-block;
     position: relative;
@@ -371,7 +367,7 @@ footer .aside h5{
     footer .under.row i:hover{
         transform: scale(1.2);
     }
-    footer .box-n-brano>*:hover{
+    footer .box-n-brano a:hover{
         text-decoration: underline;
     }
 /* FINE HOVER INIZIO MEDIA QUERY  */
@@ -443,5 +439,44 @@ footer .aside h5{
     footer .aside .size{
         font-size: 16px;
     }
+}
+
+@media  screen and (max-height:55px) {
+
+    .colonna .header-main{
+        height: 100vh;
+    }
+    footer .row .central{
+       padding: 0 1.3vw;
+    }
+    footer .central .under.row{
+        height: 100vh;
+    }
+    footer .aside .row-nw.footer-left{
+        align-items: flex-start;
+        margin-left: -10px;
+    }
+    footer .aside .row-nw.footer-right{
+        align-items: flex-end;
+    }
+    footer .aside .row-nw img{
+        height: 100vh;
+        margin-top: -10px;
+    }
+    footer .aside .icon{
+        margin-left: -25px;
+    }
+    footer .box-barra{
+        margin-top: 10px;
+    }
+    footer .central i{
+        margin: 0 1vw;
+        font-size: 60vh;
+    }
+    footer .central .icon-bigger i{
+        font-size: 60vh;
+        margin-top: 0;
+    }
+    
 }
 
