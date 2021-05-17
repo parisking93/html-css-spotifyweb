@@ -25,9 +25,11 @@ a{
 .cap{
     text-transform: capitalize;
 }
+.weight7{
+    font-weight: 700;
+}
 .end-col{
     padding-bottom: 5px;
-
 }
 .black{
     background-color: black;
@@ -52,20 +54,22 @@ div.max-width100{
 }
 .subtitle{
     color: #797b80;
-    font-size: 14px;
+    font-size: 12px;
+    text-transform: capitalize;
 }   
 body{
+    color: white;
+}
+.f-white{
     color: white;
 }
 .none{
     display: none;
 
 }
-
-/* .box-image img{
-    width: 90%;
-    min-width: 140px;
-} */
+.border-r50{
+    border-radius: 50%;
+}
 .row.important{
     height: calc(100vh - 100px);
 }
@@ -86,9 +90,6 @@ header{
     font-size: 14px;
     height: 100%;
 }
-/* .colonna-header{
-    height: calc(100vh - 50px);
-} */
 .box-logo.row{
     align-items: center;
     width: 100%;
@@ -166,13 +167,6 @@ header .box-image{
     padding: 0 5px;
 }
 /* fine header  */
-/* main .row{
-    height: calc(100vh - 120px - 100px);
-    overflow-y: auto;
-} */
-/* main.col-xs{
-    background-color: blue;
-} */
 /* MAIN  */
 main{
     height: 100%;
@@ -224,9 +218,6 @@ main section{
     margin-left: 10px;
     font-family: 'Roboto', sans-serif;
 }
-/* main section .row{
-    flex-wrap: nowrap;
-} */
 main section .colonna{
     width: calc(100% / 2 - 30px);
     margin-right: 15px;
@@ -235,7 +226,6 @@ main section .colonna{
     margin-bottom: 15px;
     height: 100%;
 }
-
 main .box-image{
     width: 100%;
     position: relative;
@@ -267,6 +257,7 @@ main .box-image img{
 }
 .title{
     margin: 10px 0 5px 0;
+    text-transform: capitalize;
 }
 /* FINE MAIN INIZIO FOOTER  */
 footer{
@@ -322,6 +313,7 @@ footer .barra-centrale{
 }
 .aside .box-barra{
     width: 30%;
+    padding: 5px 0;
 }
 .barra .barra-verde{
     background-color: rgba(255,255,255,0.7);
@@ -348,6 +340,7 @@ footer .aside .box-n-brano{
 }
 footer .aside h5{
     margin-bottom: 5px;
+    text-transform: capitalize;
 }
 /* FINE FOOTER INIZIO HOVER */
     a:hover{
@@ -366,7 +359,7 @@ footer .aside h5{
     .overlay .play:hover i{
         font-size: 45px;
     }
-    footer .box-barra:hover, footer i{
+    footer .box-barra:hover, footer i, footer h5{
         cursor: pointer;
     }
     footer .box-barra:hover .palla{
@@ -378,6 +371,9 @@ footer .aside h5{
     }
     footer .under.row i:hover{
         transform: scale(1.2);
+    }
+    footer .box-n-brano>*:hover{
+        text-decoration: underline;
     }
 /* FINE HOVER INIZIO MEDIA QUERY  */
 @media  screen and (min-width:540px) {
