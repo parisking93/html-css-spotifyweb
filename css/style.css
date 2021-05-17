@@ -339,7 +339,6 @@ footer .aside .box-n-brano{
     line-height: 10px;
 }
 footer .aside h5{
-    margin-bottom: 5px;
     text-transform: capitalize;
 }
 /* FINE FOOTER INIZIO HOVER */
@@ -359,7 +358,7 @@ footer .aside h5{
     .overlay .play:hover i{
         font-size: 45px;
     }
-    footer .box-barra:hover, footer i, footer h5{
+    footer .box-barra:hover, footer i:hover, footer h5:hover{
         cursor: pointer;
     }
     footer .box-barra:hover .palla{
@@ -376,7 +375,7 @@ footer .aside h5{
         text-decoration: underline;
     }
 /* FINE HOVER INIZIO MEDIA QUERY  */
-@media  screen and (min-width:540px) {
+@media  screen and (min-width:576px) {
     /* colonna sinistra  */
     header{
         width: 200px;
@@ -443,9 +442,6 @@ footer .aside h5{
     }
     footer .aside .size{
         font-size: 16px;
-    }
-    footer .aside h5{
-        margin-bottom: 10px;
     }
 }
 
