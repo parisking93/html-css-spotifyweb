@@ -1,25 +1,12 @@
-@media screen and (max-height:350px) {
-     .colonna .header-main{
-        display: none;
-    }
-}
+
 .margin-bot{
     margin-bottom: 20px;
 }
 .margin-bot-5{
     margin-bottom: 5px;
 }
-.margin-right5{
-    margin-right: 5px;
-}
-.margin-left5{
-    margin-left: 5px;
-}
 .margin-top10{
     margin-top: 10px;
-}
-.marg5{
-    margin: 5px;
 }
 a{
     text-decoration: none;
@@ -37,9 +24,6 @@ a{
 .end-col{
     padding-bottom: 5px;
 }
-.black{
-    background-color: black;
-}
 .colore{
     background-color: #141922;
 }
@@ -51,9 +35,6 @@ a{
 }
 .width24{
     width: 24px;
-}
-div.max-width100{
-    max-width: 100%;
 }
 .box-list{
     list-style: none;
@@ -71,7 +52,6 @@ body{
 }
 .none{
     display: none;
-
 }
 .border-r50{
     border-radius: 50%;
@@ -94,7 +74,6 @@ header{
     width: 50px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    height: 100%;
 }
 .box-logo.row{
     align-items: center;
@@ -148,7 +127,6 @@ header .download{
 }
 header .profile{
     background-color: grey;
-    border-radius: 50%;
 }
 header .box-svg{
     display: inline-block;
@@ -156,22 +134,13 @@ header .box-svg{
 }
 .overlay-nonone{
     width: 100%;
-    height: 100%;
     background-color: rgba(0,0,0,0.4);
     position: absolute;
     top: 0;
     left: 0;
 }
-header .box-image{
-    background-color: grey;
-    border-radius: 50%;
-    padding: 0 5px;
-}
 /* fine header  */
 /* MAIN  */
-main{
-    height: 100%;
-}
 nav.header-main{
     height: 90px;
     width: calc(100% - 50px);
@@ -224,7 +193,6 @@ main section .colonna{
     min-width: 120px ;
     text-align: center;
     margin-bottom: 15px;
-    height: 100%;
 }
 main .box-image{
     width: 100%;
@@ -233,12 +201,10 @@ main .box-image{
 }
 main .box-image img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 .overlay{
     width: 100%;
-    height: 100%;
     background-color: rgba(0,0,0,0.4);
     position: absolute;
     top: 0;
@@ -269,11 +235,9 @@ footer .aside .row-nw {
     align-items: center;
 }
 footer .row .aside{
-    height: 100%;
     padding: 10px 1.3vw;
 }
 footer .row .central{
-    height: 100%;
     padding: 15px 1.3vw;
 }
 footer .row img{
@@ -317,7 +281,6 @@ footer .barra-centrale{
 }
 .barra .barra-verde{
     background-color: rgba(255,255,255,0.7);
-    height: 100%;
     border-radius: 3px;
     width: 20%;
 }
@@ -390,7 +353,6 @@ footer .aside h5{
         border-left: 2px solid greenyellow;
         margin-left: -15px;
         margin-right: 12px;
-        height: 100%;
     }
     .unone{
         display: none;
