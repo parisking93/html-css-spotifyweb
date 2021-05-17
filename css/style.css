@@ -368,7 +368,7 @@ footer .aside h5{
         display: block;
         background-color: greenyellow; 
     }
-    footer .under.row i:hover{
+    footer .under.row-nw i:hover{
         transform: scale(1.2);
     }
     footer .box-n-brano a:hover{
@@ -480,6 +480,7 @@ footer .aside h5{
     .header-main .box-button a {
         padding: 10px 2vw;
         letter-spacing: -0.5px;
+        margin-right: 1px;
     }
 }
 
@@ -491,7 +492,6 @@ footer .aside h5{
     footer .central .under.row-nw{
         height: 100vh;
     }
-   
     footer .aside .icon{
         margin-left: -1vw;
     }
